@@ -1,0 +1,7 @@
+{
+  "world_versus": {
+    "interval_hours": 4,
+    "command": "versusworld run",
+    "description": "Resolve previous match, conquer, post next duel"
+  }
+}
