@@ -19,6 +19,3 @@ data/local_state.json
 .DS_Store
 Thumbs.db
 
-# Assets
-assets/versus_logo.png
-assets/reactions/*
