@@ -57,7 +57,7 @@ def run(
         False, "--local", help="Use file-backed state (no Mongo)"
     ),
 ):
-    """One tournament cycle (every 4 hours in production)."""
+    """One tournament cycle (every 2 hours in production)."""
     from versusworld.world import run as world_run
     from versusworld.world import run_local
 
@@ -104,10 +104,10 @@ def preview(
 
 @app.command("schedule")
 def schedule_loop(
-    hours: float = typer.Option(4.0, "--hours", help="Interval between runs"),
+    hours: float = typer.Option(2.0, "--hours", help="Interval between runs"),
     dry_run: bool = typer.Option(False, "--dry-run"),
 ):
-    """Run forever, sleeping `hours` between cycles (default 4h)."""
+    """Run forever, sleeping `hours` between cycles (default 2h)."""
     from versusworld.world import run as world_run
 
     interval = max(hours, 0.01) * 3600

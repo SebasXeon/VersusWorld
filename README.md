@@ -21,7 +21,7 @@ uv run versusworld init
 # one cycle (resolve last match + post next)
 uv run versusworld run
 
-# every 4 hours
+# every 2 hours
 uv run versusworld schedule
 
 # local preview (no Mongo / no FB)
